@@ -1,6 +1,9 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import * as React from "react";
+import * as ReactDOM from "react-dom";
+import { hot } from "react-hot-loader/root";
 
-import { AppWithHMR } from './App';
+console.log("owo");
 
-ReactDOM.render(<AppWithHMR />, document.querySelector('#app-mount'));
+const App = hot(() => <div>Hello World!</div>);
+
+ReactDOM.render(<App />, document.querySelector("#app-mount"));
